@@ -84,7 +84,7 @@ export default function Hero({
               >
                 <span>{content.texts.hero.obsHero.icon}</span>
                 <p
-                  className={`ml-[10px] text-center font-secondFont desktop1:text-start mt-[12px] desktop1:mt-0 ${obsTextColorOverride}`}
+                  className={`desktop1:ml-[10px] text-center font-secondFont desktop1:text-start mt-[12px] desktop1:mt-0 ${obsTextColorOverride}`}
                 >
                   {t("hero.obsHero.text")}{" "}
                 </p>
