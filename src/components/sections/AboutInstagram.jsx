@@ -8,6 +8,7 @@ import SocialPrint from "../sectionElements/aboutInstagram/SocialPrint";
 import DefaultInstagram from "../sectionElements/aboutInstagram/DefaultInstagram";
 import ParagraphsAboutSocial from "../sectionElements/aboutInstagram/ParagraphsAboutSocial";
 import RedesSociais from "../sectionElements/aboutInstagram/RedesSociais";
+import ButtonSiteCopy from "../interactives/ButtonSiteCopy";
 
 export default function AboutInstagram({ socialPrint, colorMode }) {
   const { t } = useTranslation();
@@ -47,7 +48,7 @@ export default function AboutInstagram({ socialPrint, colorMode }) {
             />
           </MotionDivDownToUp>
           <ParagraphsAboutSocial colorMode={colorMode} />
-          <div>
+          <div className="flex flex-col gap-4">
             <RedesSociais
               instagram={true}
               facebook={true}
@@ -55,6 +56,7 @@ export default function AboutInstagram({ socialPrint, colorMode }) {
               x={true}
               tiktok={true}
             />
+            <ButtonSiteCopy />
           </div>
         </div>
       </SectionWrapper>
